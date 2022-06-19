@@ -1,2 +1,6 @@
-<!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<view>
+  <view bindtap="gotopage">自定义键盘跳转</view>
+
+
+
+</view>

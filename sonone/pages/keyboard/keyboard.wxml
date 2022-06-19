@@ -1,0 +1,37 @@
+<view>
+
+  <view class="oneselef_input_box">
+    <view class="oneselef_input box_flex" catchtap="onShowkeyboard" data-index="0">{{inputVal[0]}}</view>
+    <view class="oneselef_input box_flex" catchtap="onShowkeyboard" data-index="1">{{inputVal[1]}}</view>
+    <view class="oneselef_input box_flex" catchtap="onShowkeyboard" data-index="2">{{inputVal[2]}}</view>
+    <view class="oneselef_input box_flex" catchtap="onShowkeyboard" data-index="3">{{inputVal[3]}}</view>
+    <view class="oneselef_input box_flex" catchtap="onShowkeyboard" data-index="4">{{inputVal[4]}}</view>
+  </view>
+
+  <view class="popup_box" wx:if="{{show}}">
+    <!-- 数字键盘 -->
+    <view class="popup_father">
+      <view class="popup_item" wx:for="{{numlist}}" wx:key="index">
+        <view data-item="{{item}}" catchtap="changeVal">
+          {{item}}
+        </view>
+      </view>
+    </view>
+    <!-- 字母键盘 -->
+    <view class="popup_father">
+      <view class="popup_item" wx:for="{{letterlist}}" wx:key="index">
+        <view data-item="{{item}}" catchtap="changeVal">
+          {{item}}
+        </view>
+      </view>
+    </view>
+    <!-- 文字键盘 -->
+    <view class="popup_father">
+      <view class="popup_item" wx:for="{{textlist}}" wx:key="index">
+        <view data-item="{{item}}" catchtap="changeVal">
+          {{item}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

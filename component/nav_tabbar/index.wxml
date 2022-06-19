@@ -1,0 +1,27 @@
+<view class="containerBox bgc_pub" style="height: {{zHeight}}px;">
+  <view class="fieldBox bgc_pub" style="height: {{zHeight}}px;">
+    <view class="titleMain bgc_pub" style="top: {{ztlHeight}}px;height: {{dhlHeight}}px;">
+
+      <!-- 自定义navbar的内容 -->
+      <block wx:if="{{title}}">
+        <view style="display: flex;color: #fff;" catchtap="backout">
+          <view style="margin: 0 10rpx;">
+            <van-icon name="arrow-left" color="#fff" />
+          </view>
+          <view>{{title}}</view>
+        </view>
+      </block>
+      <!-- 自定义navbar的内容 end -->
+
+      <!-- 自定义搜索组件 -->
+      <block wx:if="{{search}}">
+        <view class="search_father">
+          <input model:value="{{val}}" class="search_input" placeholder="请输入搜索内容" type="{{searchType}}" bindinput="inputchange" placeholder-class="	placeholder_class" />
+        </view>
+      </block>
+      <!-- 自定义搜索组件end -->
+      <sold></sold>
+
+    </view>
+  </view>
+</view>

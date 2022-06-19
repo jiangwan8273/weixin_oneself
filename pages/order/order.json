@@ -1,4 +1,8 @@
 {
-  "usingComponents": {},
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "nav": "../../component/nav_tabbar"
+  },
+  "enablePullDownRefresh": false,
   "navigationBarTitleText": "订单"
 }

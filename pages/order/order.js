@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    val: ''
   },
 
   /**
@@ -28,6 +28,15 @@ Page({
   onShow() {
     // 修改自定义tabbar选中状态
     this.getTabBar().setData({ active: 1 })
+  },
+
+  // 自元素传递过来的值
+  changeVal(e) {
+    console.log(e.detail);
+  },
+
+  cs() {
+    console.log('cs-----',this.data.val);
   },
 
   /**

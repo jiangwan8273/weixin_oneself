@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    
   },
 
   /**
@@ -28,6 +28,12 @@ Page({
   onShow() {
     // 修改自定义tabbar选中状态
     this.getTabBar().setData({ active: 2 })
+  },
+
+  gotopage() {
+    wx.navigateTo({
+      url: '/sonone/pages/keyboard/keyboard',
+    })
   },
 
   /**

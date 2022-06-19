@@ -3,9 +3,9 @@
     <van-tabbar-item icon="{{item.iconPath}}">{{item.text}}</van-tabbar-item>
   </block>
 </van-tabbar> -->
-<cover-view class="boxcs">
+<!-- <cover-view class="boxcs">
   阿萨德哈看看
-</cover-view>
+</cover-view> -->
 <cover-view class="tabbar_box">
   <cover-view class="tabbar_item" wx:for="{{list}}" wx:key="index" catchtap="onChange" data-item="{{item}}">
     <cover-view>{{item.text}}</cover-view>

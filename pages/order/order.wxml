@@ -1,2 +1,7 @@
-<!--pages/order/order.wxml-->
-<text>pages/order/order.wxml</text>
+<view>
+  <nav search="true" searchType="number" value="{{val}}" bind:changeInput="changeVal"></nav>
+  <view class="global__fix_tabbar">
+    <view bindtap="cs">王者荣耀</view>
+    <view>王者荣耀</view>
+  </view>
+</view>
