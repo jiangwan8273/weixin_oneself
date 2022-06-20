@@ -1,4 +1,5 @@
 // pages/home/home.js
+const app = getApp()
 Page({
 
   /**
@@ -30,10 +31,16 @@ Page({
     this.getTabBar().setData({ active: 2 })
   },
 
+  // 跳转到自定义键盘
   gotopage() {
     wx.navigateTo({
       url: '/sonone/pages/keyboard/keyboard',
     })
+  },
+
+  // 跳转到h5页面监听h5返回事件
+  gotoH5() {
+    app.gotoH5page('/cs/backpage')
   },
 
   /**

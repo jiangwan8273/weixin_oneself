@@ -1,6 +1,4 @@
 <view>
   <view bindtap="gotopage">自定义键盘跳转</view>
-
-
-
+  <view bindtap="gotoH5">h5页面返回事件的监听</view>
 </view>
